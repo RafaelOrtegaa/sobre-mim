@@ -6,9 +6,10 @@ body{
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f1f7;
+    line-height: 1.6;
 }
-
 h1 {
     font-size: 2em; /*1rem = 16px -> 1em = M */
     font-weight: bold;
@@ -37,6 +38,7 @@ header ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -55,7 +57,6 @@ section {
     scroll-margin-top: 4rem; 
     padding: 1rem;
     border: 1px solid #000000;
-    text-align: center;
     border-radius: 5%;
 
 }
@@ -77,4 +78,3 @@ footer {
 form {
     color:white
 }
-
