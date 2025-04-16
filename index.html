@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="style.css">
 
 
-<style>
+    <style>
 
-</style>
+    </style>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
     <section id="sobreMim">
         <h1>Sobre mim</h1>
-        <p>Sou estudante, cursando ADS no SENAI São Paulo.</p>
+        <p class="introducao">Sou estudante, cursando ADS no SENAI São Paulo.</p>
         <img src="rafael.jpg" alt="Foto de um homem pardo de cabelo curto, sério" width="200"
             title="Foto de um homem pardo de cabelo curto, sério" class="foto-perfil">
         <ul>
@@ -45,59 +45,159 @@
                     target="_blank"><u>Acesse o meu GitHub</u></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/rafael-ortega-cardoso-486062358/" target="_blank"><u>Acesse o meu
-                    Linkedin</u></a>
+                <a href="https://www.linkedin.com/in/rafael-ortega-cardoso-486062358/"
+                    title="Clique para acessar meu linkedin" target="_blank"><u>Acesse o meu
+                        Linkedin</u></a>
             </li>
         </ul>
     </section>
 
     <section id="formacaoAcademica">
         <h2>Formação acadêmica</h2>
-        <ul>
-            <li>Ensino Fundamental completo</li>
-            <li>Cursando o Ensino Médio</li>
-            <li>Cursando Análise e Desenvolvimentos de Sistemas</li>
-            <li>Cursando inglês</li>
-        </ul>
+
+
+        <div class="cards-em-coluna">
+            <ul class="card">
+                <li class="titulo-card">Técnico em desenvolvimento de sistemas</li>
+                <li class="instituicao-card">SENAI "Conde Jose Vicente de Azevedo</li>
+                <li class="ano-card">Formação: 2026 (previsto)</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Ensino Fundamental</li>
+                <li class="instituicao-card">SESI "Roberto Simonsen"</li>
+                <li class="ano-card">Formação: 2023</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Ensino Médio</li>
+                <li class="instituicao-card">SESI "Roberto Simonsen"</li>
+                <li class="ano-card">Formação: 2026 (previsto)</li>
+            </ul>
+
+        </div>
+
+        <!-- ul.card>.titulo-card+li.instituicao-card+li.ano-card -->
+
+
     </section>
 
     <section id="hardSkills">
         <h2>Hard skills</h2>
-        <ul>
-            <li>Digitação rápida</li>
-            <li>Design Gráfico básico (Canva)</li>
-            <li>Edição de vídeo simples (Capcut)</li>
-            <li>Lógica de programação básica (HTML e Javascript)</li>
-            <li>Power Shell básico</li>
-            <li>Conhecimento em GitHub</li>
-            <li>Programação no spike prime</li>
-        </ul>
+
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="icone-hskill">🍵</li>
+                <li class="nome-hskill">Javascript</li>
+                <li class="descricao-hskill">Conhecimento em Javascript</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">😺</li>
+                <li class="nome-hskill">GitHub</li>
+                <li class="descricao-hskill">Conhecimento em GitHub</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🔧</li>
+                <li class="nome-hskill">PowerShell</li>
+                <li class="descricao-hskill">Conhecimento em PowerShell</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🤖</li>
+                <li class="nome-hskill">Spike Prime</li>
+                <li class="descricao-hskill">Conhecimento em Spike Prime</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">💻</li>
+                <li class="nome-hskill">HTML</li>
+                <li class="descricao-hskill">Conhecimento em HTML</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">📽️</li>
+                <li class="nome-hskill">Cap-cut</li>
+                <li class="descricao-hskill">Conhecimento básico em edição de vídeo</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🖌️</li>
+                <li class="nome-hskill">Canva</li>
+                <li class="descricao hskill">Conhecimento básico em desing</li>
+            </ul>
+
+        </div>
     </section>
 
     <section id="softSkills">
         <h2>Soft skills</h2>
-        <ul>
-            <li>Responsabilidade</li>
-            <li>Trabalho em equipe</li>
-            <li>Persistência</li>
-            <li>Resolução de problemas</li>
-            <li>Organização</li>
-            <li>Adaptabilidade</li>
-            <li>Educação</li>
-            <li>Respeito</li>
-            <li>Esforço</li>
-            <li>Comprometimento</li>
-        </ul>
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="icone-hskill">💼</li>
+                <li class="nome-hskill">Responsabilidade</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">👨‍👩‍👧‍👦</li>
+                <li class="nome-hskill">Trabalho em equipe</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🧗🏻</li>
+                <li class="nome-hskill">Persistência</li>
+                
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">📚</li>
+                <li class="nome-hskill">Organização</li>
+                
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🦎</li>
+                <li class="nome-hskill">Adaptabilidade</li>
+                
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🙂</li>
+                <li class="nome-hskill">Educação</li>
+                
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">👏</li>
+                <li class="nome-hskill">Respeito</li>
+        
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">💪🏻</li>
+                <li class="nome-hskill">Esforço</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-hskill">🫡</li>
+                <li class="nome-hskill">Comprometimento</li>
+            </ul>
+        </div>
     </section>
 
     <section id="meusProjetos">
-        <h2>Meus projetos</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/RafaelOrtegaa?tab=repositories" target="_blank"><u>Acesse meus projetos</u></a>
-            </li>
-        </ul>
+        <h2>Meu Projeto</h2>
+        <div class="lista-projeto">
+            <a href="https://github.com/RafaelOrtegaa?tab=repositories" target="_blank" class="projeto-box">
+                📁 Projeto Portfolio
+            </a>
+        </div>
     </section>
+    
+    
 
     <section id="meusArquivos">
         <h2>Meus artigos</h2>
@@ -114,11 +214,12 @@
             <h4>O que deseja-se tratar</h4>
             <textarea name="mensagem" rows="5" cols="50"></textarea>
             <!-- <input type="submit" name="botaoEnviar"> -->
-            <button type="submit" name="botaoEnviar">Solicitar contato</button>
+            <input type="submit" name="botaoEnviar" value="Solicitar contato">
+
 
         </form>
     </section>
-    
+
 
     <footer id="rodape">
         <p>Contato:</p>
