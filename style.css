@@ -166,6 +166,6 @@ input[type="submit"] { /*botao de enviar*/
 
 
 html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 80px; /*garante que navegue sem tampar nada*/
 }
 
