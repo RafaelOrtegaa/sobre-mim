@@ -28,18 +28,27 @@
                 <li><a href="#hardSkills">Hard skills</a></li>
                 <li><a href="#softSkills">Soft skills</a></li>
                 <li><a href="#meusProjetos">Projetos</a></li>
-                <li><a href="#meusArquivos">Artigos</a></li>
+                <li><a href="#meusArtigos">Artigos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a><span id="botao-tema">☀️</span></a></li>
+                <li><a><span id="botao-contraste">👁️</span></a></li>
             </ul>
         </nav>
+    
     </header>
 
     <section id="sobreMim">
         <h1>Sobre mim</h1>
-        <p class="introducao">Sou estudante, cursando ADS no SENAI São Paulo.</p>
+      
         <img src="rafael.jpg" alt="Foto de um homem pardo de cabelo curto, sério" width="200"
             title="Foto de um homem pardo de cabelo curto, sério" class="foto-perfil">
-        <ul>
+        <p class="introducao">Meu nome é Rafael Ortega Cardoso, nasci em 2008, em São Paulo-SP. Atualmente sou aluno,
+            cursando Análise e Desenvolvimento de Sistemas no SENAI-Ipiranga e o ensino médio no SESI-Ipiranga. Desde 
+            sempre envolvido na área da tecnologia sendo com jogos, programas, sites e entre outros. Além da tecnologia,
+            sempre fui fã de esportes e desenvolvimento físico. 
+        </p>
+        
+        <ul class="mihnas-redes">
             <li>
                 <a href="https://github.com/RafaelOrtegaa" title="Clique para acessar meu portifólio no GitHub"
                     target="_blank"><u>Acesse o meu GitHub</u></a>
@@ -126,7 +135,7 @@
             <ul class="card">
                 <li class="icone-hskill">🖌️</li>
                 <li class="nome-hskill">Canva</li>
-                <li class="descricao hskill">Conhecimento básico em desing</li>
+                <li class="descricao-hskill">Conhecimento básico em desing</li>
             </ul>
 
         </div>
@@ -189,18 +198,73 @@
     </section>
 
     <section id="meusProjetos">
-        <h2>Meu Projeto</h2>
-        <div>
-            <a href="https://github.com/RafaelOrtegaa?tab=repositories" target="_blank" class="projeto-box">
-                📁 Projeto Portfolio
-            </a>
-        </div>
+        <h2>Meus Projetos</h2>
+
+
+    <ul class="card">
+        <li cass="card-imagem">
+            <img src="fotojogo.png" 
+            alt="Jogo Moonlander">
+        </li>    
+        <li class="card-titulo">Moonlander</li>
+        <li class="card-descricao">Um jogo de simulação de pouso lunar</li>
+        <li class="card-cta">
+        <button type="button" class="botao botao-demo">Jogue Agora!</button>
+        </li>
+        <li class="card-gh"><a href="https://github.com/RafaelOrtegaa/lopal-moonlander">GitHub</a></li>
+    </ul>
     </section>
     
     
 
-    <section id="meusArquivos">
-        <h2>Meus artigos</h2>
+    <section id="meusArtigos">
+        <h2 class="titulo-secao">Meus artigos</h2>
+
+        <div class="artigos cards-em-linha">
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Portifólio profissional usando o GitHub Pages</h3>
+                <span class="data-publicacao">21 abr 2025</span>
+                <span class="autor">Rafael Ortega</span>
+            </header>
+            <p>Crie e publique seu portifólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar
+                seus projetos e habilidades.</p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
+
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Portifólio Comandos básicos GitHub</h3>
+                <span class="data-publicacao">23 abr 2025</span>
+                <span class="autor">Rafael Ortega</span>
+            </header>
+            <p>Utilize e execute os comandos do GitHub, para iniciar, e salvar seus projetos </p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
+
+
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Portifólio Comandos básicos PowerShell</h3>
+                <span class="data-publicacao">26 abr 2025</span>
+                <span class="autor">Rafael Ortega</span>
+            </header>
+            <p>Utilize e execute comandos através do PowerShell, para modificações, criações e exclusões de arquivos
+                e programas em seu computador.</p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
     </section>
 
 
@@ -230,6 +294,34 @@
         <address>São Paulo, SP - Brazil</address>
         <h6>© 2025 Rafael Ortega Cardoso. Todos os direitos reservados.</h6>
     </footer>
+
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click' ,
+        trocaTema);
+
+        function trocaTema() {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme')=== 'dark') {
+                root.removeAttribute('data-theme');
+            }else {
+                root.setAttribute('data-theme' , 'dark');
+            }
+        }
+
+        document.querySelector('#botao-contraste').addEventListener('click' ,
+        trocaTemaC);
+
+        function trocaTemaC() {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme')=== 'high-contrast') {
+                root.removeAttribute('data-theme');
+            }else {
+                root.setAttribute('data-theme' , 'high-contrast');
+            }
+        }
+    </script>
 </body>
 
 </html>
