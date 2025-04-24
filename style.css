@@ -253,25 +253,29 @@ input[type="submit"] { /*botao de enviar*/
     border: none;
     border-radius: 4px;
     margin: 0.3rem 0.3rem 0 0;
+    font-weight: bold;
 }
 
-botao:hover {
+.botao:hover {
     cursor: pointer;
-    background-color: var(--cor-secundaria)
 }
 
-.botao-demo,
-.botao-continue {
-    background-color: var(--cor-primaria);
-    color: var(--cor-primaria-texto)
-}
-
-.botao-compartilhar {
-    background-color: var(--cor-bordas);
-}
-
-.botao-compartilhar:hover {
+.botao-primario:hover {
     background-color: var(--cor-secundaria);
+}
+
+.botao-primario {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-botao);
+}
+
+.botao-secundario {
+    border: 1px solid var(--cor-secundaria-texto)
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-secundaria-texto);
+    color: var(--cor-texto-botao);
 }
 
 .artigos {
@@ -282,6 +286,7 @@ botao:hover {
     display: flex;
     flex-direction: column;
     width: 30%;
+    background-color: var(--cor-fundo-cartao);
     padding: 1rem;
     border-left: 5px solid var(--cor-primaria);
     margin-bottom: 1rem;
@@ -290,9 +295,72 @@ botao:hover {
 
 .artigos h3 {
     margin-top: 0;
-    color: var(cor --cor-secundaria);
+    /* color: var(--cor-secundaria); */
     margin-bottom: 1rem;
 }
+
+.artigos .data-publicacao, 
+.artigos .autor {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--cor-secundaria-texto);
+    margin-right: 1em;
+}
+
+.artigos .data-publicacao::before {
+    content: "Publicado: ";
+}
+
+.artigos .autor::before {
+    content: "Por: ";
+}
+
+.artigos p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.artigos p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.artigos footer {
+   margin-top: auto;
+   margin-bottom: .5rem;
+}
+
+#overlay {
+    background-color: #000a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.preview-moonlander {
+    min-width: 800px;
+    min-height: 660px;
+    position: fixed;
+    top: calc(50vh - 330px);
+    left: calc(50vw - 400px);
+    display: grid;
+    justify-items: center;
+    z-index: 2;
+}
+
+.preview-moonlander iframe {
+    width: 800px;
+    height: 651px;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.invisible {
+    display: none;
+}
+
 .projeto-box {
     padding: 15px 25px;
     border: 2px solid var(--cor-bordas); /* Borda sólida*/
